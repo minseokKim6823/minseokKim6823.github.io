@@ -1,0 +1,75 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-shadow: 1px 1px;
+}
+.title{
+    font-size: large;
+    color:#fff
+}
+.container p{
+    color: #eee
+}
+.container{
+    overflow: auto;
+    height: 100vh;
+    scroll-snap-type: start;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: end;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero{
+    background-image: url(../img/bg1.jpeg);
+    text-align: center;
+    padding-top: 30vh;
+    height: 700px;
+    font-size: 1.5rem;
+}
+.contact{
+    background-image: url(../img/bg3.jpeg);
+    padding-top: 30vh;
+    font-size :1.5rem;
+    text-align: center;
+}
+.contact-sns{
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    padding: 0 0 0 0 ;
+}
+.contact-sns a{
+    font-size: 150%;
+    background: #fff;
+    display:inline-block;
+    border-radius: 6px;
+    padding: .2rem .4rem .5rem .2rem;
+    width: 3rem;
+    height: 3rem;
+    margin: 5px;    
+}
+
+@media (max-width:700px){
+    .title{
+        font-size: 4rem;
+    }
+    p {
+        padding: 0 1 rem;
+    }
+}
+.container{
+    scroll-snap-type: y mandatory;
+}
+
+.menu{
+    background-image: url(../img/bg2.jpeg);
+    font-size: 2rem;
+    justify-content: center;
+}
