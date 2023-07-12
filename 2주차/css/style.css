@@ -20,7 +20,7 @@ p{
 header {
     max-width: 1000px;
     margin :2.5rem auto 0;
-    background: url('../images/header.svg') no-repeat center top/cover;
+    background: url('../images/dice.svg') no-repeat center top/cover;
     height: 170px;
 }
 .page-title{
