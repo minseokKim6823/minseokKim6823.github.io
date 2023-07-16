@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+    <body>
+        <h1>다양한 선택지</h1>
+        <ul>
+            <li>첫 번째 아이템이에요!</li>
+            <li class= "even">두 번째 아이템이에요!</li>
+            <li>세 번째 아이템이에요!</li>
+            <li class= "even">네 번째 아이템이에요!</li>
+            <li>다섯 번째 아이템이에요!</li>
+        </ul>
+        <p>
+            <span id="blue">아이디 선택자로 요소를 선택합니다.</span><br>
+            <span class="green">클래스 선택자로 요소를 선택합니다.</span><br>   
+        </p>
+        <script>
+            var selectedItem =document.getElementsByTagName("li");
+            for(var i =0; i<selectedItem.length; i++){
+                selectedItem.item(i).style.color="red";
+            }
+            var selectedItem =document.getElementById("blue");
+            selectedItem.style.color = "blue";
+            
+            var selectedItem =document.getElementsByClassName("green");
+            selectedItem[0].style.color = "green";
+            
+            var selectedItem=document.querySelectorAll("li.even");
+            for(var i =0;i<selectedItem.length; i++){
+                selectedItem.item(i).style.color="yellow";
+            }
+
+            document.write("document.write로 추가한 문구입니다.");
+            document.write("<p class='dom' style='text-align: center;'>태그로 입력할 수도 있습니다.</p>");
+            var str =document.getElementsByClassName("dom");
+            str[0].innerHTML ="document.write로 추가한 문장을 innerHTML로 수정했습니다.";
+        </script>
+    </body>
+</html>
