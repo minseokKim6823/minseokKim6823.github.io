@@ -1,0 +1,52 @@
+.container1{
+    width: 450px;
+    height: 600px;
+    background: #D9D9D9;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 50px auto;
+
+}
+.container2{
+    width: 400px;
+    height: 550px;
+    border-radius: 35px;
+    background: #fff;
+    margin: 25px auto;
+
+}
+.container .title{
+    font-size: 75px;
+    width: 100px;
+}
+#increase{
+    font-size: 40px;
+    width: 100px;
+}
+#decrease{
+    font-size: 40px;
+    width: 100px;
+}
+#decrease5{
+    font-size: 40px;
+    width: 100px;
+}
+#increase5{
+    font-size: 40px;
+    width: 100px;
+   
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+#clear {
+    font-size: 40px;
+    width: 217px;
+    height: 50px;
+    margin: 18px auto;
+}
