@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+./06주차
 
 # production
 /build
